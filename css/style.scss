@@ -1,0 +1,111 @@
+@import "./utils/variables";
+@import "./base/base";
+@import "./layouts/main";
+@import "./layouts/sections";
+@import "./components/checkbox";
+@import "./pages/recipe";
+@media (max-width:1280px) {
+    #l-intro-section,#l-recipe-section {
+        padding: 0 150px;
+    }
+    .w-recipe-info-card {
+        padding: 30px 0;
+        gap: 20px;
+        div {
+            padding: 0 30px;
+        }
+    }
+    .w-recipe-wrapper {
+        p {
+            max-width: 400px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    main {
+        padding: 50px 0 230px;
+        gap: 35px;
+    }
+    h1 {
+        margin:  0 0 12.5px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3 {
+        margin:  0 0 12.5px;
+    }
+    #l-intro-section,#l-recipe-section {
+        padding: 0 100px;
+    }
+    .w-recipe-wrapper {
+        flex-direction: column;
+
+    }
+    .w-recipe-info-card {
+        padding: 0 0 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        box-shadow: none;
+        div {
+            padding: 0;
+            gap: 5px;
+        }
+        p {
+            gap: 0;
+        }
+    }
+    .w-3-units-wrapper--column {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .recipe-instructions {
+        gap: 15px;
+        div {
+            height: 36px;
+            width: 36px;
+        }
+    }
+    .recipe-ingredients-title {
+        padding : 0 0 24px;
+    }
+}
+@media (max-width: 450px) {
+    main {
+        padding: 30px 0 230px;
+        gap: 25px;
+    }
+    h1 {
+        margin:  0 0 12.5px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3 {
+        margin:  0 0 12.5px;
+    }
+    #l-intro-section,#l-recipe-section {
+        padding: 0 12.5px;
+    }
+    .w-recipe-info-card {
+        padding: 0 0 30px;
+        gap: 20px;
+        div {
+            padding: 0;
+            gap: 5px;
+        }
+        p {
+            gap: 0;
+        }
+    }
+    .recipe-ingredients,.w-3-units-wrapper--column {
+        p {
+            width: 300px;
+        }
+    }
+    .recipe-instructions {
+        gap: 15px;
+    }
+    .recipe-ingredients-title {
+        padding : 0 0 24px;
+    }
+}
