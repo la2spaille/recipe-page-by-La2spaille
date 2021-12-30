@@ -38,3 +38,17 @@ p {
         font-weight: 700;
     }
 }
+i.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    height: 27px;
+    width: 27px; 
+    &::after {
+        font-family: 'Material Icons';
+        content: '\e8b5';
+        color: $gray;
+        font-size: 27px;
+    }
+}

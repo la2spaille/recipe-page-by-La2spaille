@@ -99,13 +99,23 @@
     }
     .recipe-ingredients,.w-3-units-wrapper--column {
         p {
-            width: 300px;
+            max-width: 300px;
         }
     }
     .recipe-instructions {
         gap: 15px;
+        p {
+            max-width: 300px;
+        }
     }
     .recipe-ingredients-title {
         padding : 0 0 24px;
+    }
+    .w-source {
+        p {
+            flex-direction: column;
+            padding: 25px 0 0;
+            font-size: 12px;
+        }
     }
 }

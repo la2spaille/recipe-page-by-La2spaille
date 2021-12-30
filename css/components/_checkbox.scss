@@ -1,0 +1,51 @@
+input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+       & + .checkbox--style {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+.checkbox--style {
+    position: relative;
+    display: flex;
+    width: 1em;
+    height: 1em;
+     &::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        height: calc(100% - 2px);
+        width: calc(100% - 2px);
+        border-radius: 4px;
+        border: 1px solid #828282;
+    }
+    &::after {
+        font-family: 'Material Icons';
+        content: "\e876";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: calc(100% - 2px);
+        width: calc(100% - 2px);
+        font-size: 1em;
+        background: $orange;
+        color: $white;
+        border: 1px solid #828282;
+        opacity: 0;
+        border-radius: 4px;
+        transition: 0.4s ease;
+    }
+    &:checked {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
