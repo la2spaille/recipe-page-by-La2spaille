@@ -123,7 +123,7 @@ input:checked + .checkbox--style::after {
 }
 
 .w-3-units-wrapper--column p {
-  width: 590px;
+  max-width: 590px;
   padding: 0 0 0 25px;
   font-family: 'Montserrat',sans-serif;
   font-style: italic;
@@ -140,7 +140,7 @@ input:checked + .checkbox--style::after {
 }
 
 .w-3-units-wrapper--column img {
-  padding: 45px 0 0;
+  margin: 45px 0 0;
 }
 
 .w-recipe-wrapper {
@@ -153,7 +153,7 @@ input:checked + .checkbox--style::after {
 .w-recipe-info-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 40px;
   padding: 55px 0 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -162,6 +162,7 @@ input:checked + .checkbox--style::after {
 
 .w-recipe-info-card div {
   display: flex;
+  align-items: center;
   gap: 14px;
   padding: 0 40px 0;
 }
@@ -295,7 +296,12 @@ input:checked + .checkbox--style::after {
     line-height: 32px;
   }
   h3 {
+    font-size: 24px;
+    line-height: 32px;
     margin: 0 0 12.5px;
+  }
+  img {
+    border-radius: 12px;
   }
   #l-intro-section, #l-recipe-section {
     padding: 0 100px;
@@ -307,8 +313,12 @@ input:checked + .checkbox--style::after {
     padding: 0 0 30px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
     box-shadow: none;
+  }
+  .w-recipe-info-card div:first-child {
+    min-width: 100%;
   }
   .w-recipe-info-card div {
     padding: 0;
@@ -346,19 +356,45 @@ input:checked + .checkbox--style::after {
   h3 {
     margin: 0 0 12.5px;
   }
+  strong {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  img {
+    margin: 15px 0 0 !important;
+  }
   #l-intro-section, #l-recipe-section {
     padding: 0 12.5px;
   }
+  #l-intro-section p {
+    font-size: 12px;
+    line-height: 15px;
+  }
   .w-recipe-info-card {
     padding: 0 0 30px;
-    gap: 20px;
+    gap: 20px 40px;
   }
   .w-recipe-info-card div {
     padding: 0;
     gap: 5px;
   }
+  .w-recipe-info-card i.icon {
+    height: 12.5px;
+    width: 12.5px;
+  }
+  .w-recipe-info-card i.icon::after {
+    font-size: 14px;
+  }
   .w-recipe-info-card p {
     gap: 0;
+  }
+  .w-recipe-info-card p span {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .w-recipe-info-card p strong {
+    font-size: 10px;
+    line-height: 12px;
   }
   .recipe-ingredients p, .w-3-units-wrapper--column p {
     max-width: 300px;
