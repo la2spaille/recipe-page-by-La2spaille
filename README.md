@@ -1,5 +1,5 @@
 
-<h1 align="center">recipe-page-by-La2spaille</h1>
+<h1 align="center">Recipe-page-by-La2spaille</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
